@@ -1,0 +1,2 @@
+CalculatorApp - Android TP 3
+A fully functional Android calculator application built with Java and XML. It goes beyond basic requirements by including input validation (preventing crashes on empty/invalid inputs), dynamic targeting for unary operations (applying Square and Square Root to the focused input field), and sorting features. The UI features a custom "Baby Blue" theme, keyboard auto-hide, and a one-tap result copy-to-clipboard feature.
