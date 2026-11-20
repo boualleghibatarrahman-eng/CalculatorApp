@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Baby Blue Palette -->
+    <color name="baby_blue_bg">#F0F8FF</color>
+    <color name="baby_blue_primary">#89CFF0</color>
+    <color name="baby_blue_dark">#2C3E50</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="clear_red">#FF7F7F</color>
+</resources>

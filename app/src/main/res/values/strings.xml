@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+
+    <string name="title_calculator">Calculator</string>
+    <string name="hint_num1">Enter number 1</string>
+    <string name="hint_num2">Enter number 2</string>
+    <string name="hint_num3">Enter number 3</string>
+
+    <string name="btn_average">Average</string>
+    <string name="btn_max">Max</string>
+    <string name="btn_min">Min</string>
+
+    <string name="btn_sort_asc">Sort ↑</string>
+    <string name="btn_sort_desc">Sort ↓</string>
+
+    <string name="btn_clear">Clear</string>
+
+    <string name="btn_sqrt">√</string>
+    <string name="btn_square">x²</string>
+    <string name="btn_power">x^y</string>
+
+    <string name="result_default">Result</string>
+    <string name="error_empty">Please fill all required fields</string>
+    <string name="error_invalid">Please enter valid numbers</string>
+    <string name="copied_toast">Result copied to clipboard!</string>
+</resources>

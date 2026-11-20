@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/baby_blue_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_calculator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/num1Txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_num1"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="@color/baby_blue_dark"
+        android:background="@color/pure_white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/num2Txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_num2"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="@color/baby_blue_dark"
+        android:background="@color/pure_white"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/num1Txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/num3Txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_num3"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="@color/baby_blue_dark"
+        android:background="@color/pure_white"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/num2Txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/avgBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_average"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/num3Txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/maxBtn"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/maxBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_max"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/avgBtn"
+        app:layout_constraintStart_toEndOf="@id/avgBtn"
+        app:layout_constraintEnd_toStartOf="@id/minBtn"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/minBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_min"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/avgBtn"
+        app:layout_constraintStart_toEndOf="@id/maxBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp" />
+
+    <Button
+        android:id="@+id/sortAscBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sort_asc"
+        android:textSize="12sp"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/avgBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sortDescBtn"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/sortDescBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sort_desc"
+        android:textSize="12sp"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/sortAscBtn"
+        app:layout_constraintStart_toEndOf="@id/sortAscBtn"
+        app:layout_constraintEnd_toStartOf="@id/sqrtBtn"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/sqrtBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sqrt"
+        android:textSize="18sp"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/sortAscBtn"
+        app:layout_constraintStart_toEndOf="@id/sortDescBtn"
+        app:layout_constraintEnd_toStartOf="@id/squareBtn"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/squareBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_square"
+        android:textSize="18sp"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/sortAscBtn"
+        app:layout_constraintStart_toEndOf="@id/sqrtBtn"
+        app:layout_constraintEnd_toStartOf="@id/powerBtn"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
+
+    <Button
+        android:id="@+id/powerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_power"
+        android:textSize="18sp"
+        android:backgroundTint="@color/baby_blue_primary"
+        android:textColor="@color/baby_blue_dark"
+        app:layout_constraintTop_toTopOf="@id/sortAscBtn"
+        app:layout_constraintStart_toEndOf="@id/squareBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_default"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/baby_blue_dark"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/sortAscBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_clear"
+        android:backgroundTint="@color/clear_red"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/resultTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
